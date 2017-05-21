@@ -1,6 +1,9 @@
 # nodejs-memo
 Nodejs開発環境構築メモ
 
+たくさんnpmにpublishするなら、自動化しよう。
+
+
 1. githubのリポジトリ作成
 2. travisにリポジトリ登録
 3. code climateにリポジトリ登録
@@ -14,4 +17,5 @@ Nodejs開発環境構築メモ
 ## travisの自動デプロイについて
 
 travisコマンドでnpmリポジトリ毎の暗号化したtokenが設定されるので、それを用いる。
+
 http://microapps.com/blog/auto-publishing-to-npm-by-travis-ci/
