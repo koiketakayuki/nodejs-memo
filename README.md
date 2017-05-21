@@ -16,6 +16,17 @@ Nodejs開発環境構築メモ
 
 ## travisの自動デプロイについて
 
-travisコマンドでnpmリポジトリ毎の暗号化したtokenが設定されるので、それを用いる。
+npm loginした後に、下記のコマンドでauth tokenをチェック
 
+```
+cat ~/.npmrc | grep _auth
+```
+
+travisコマンドでtokenを暗号化
+
+```
+travis encrypt -r koiketakayuki/(リポジトリ名) (auth-token)
+```
+
+[参考URL]
 http://microapps.com/blog/auto-publishing-to-npm-by-travis-ci/
