@@ -28,5 +28,8 @@ travisコマンドでtokenを暗号化
 travis encrypt -r koiketakayuki/(リポジトリ名) (auth-token)
 ```
 
+travisにリポジトリ登録してないとエラーになるので注意。
+これでテストを通過後、git push --tagsでタグがついたものだけnpmに自動でpublishされる。
+
 [参考URL]
 http://microapps.com/blog/auto-publishing-to-npm-by-travis-ci/
